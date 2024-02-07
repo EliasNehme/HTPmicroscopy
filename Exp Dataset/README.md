@@ -11,7 +11,6 @@ Exp Dataset
     |       |____ ST
     |       |____ CM
     |____README.md
-    |____.gitignore
 ```
 This dataset can be downloaded from google drive using the following url:
 ```

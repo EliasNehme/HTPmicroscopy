@@ -5,9 +5,8 @@ Models
     |___Focus_finder_TP_model_best_ckpt.pth
     |___Cellsnap_3D_segmentor_TP_model_best_ckpt.pth
     |___README.md
-    |___.gitignore
 ```
 These weights can be downloaded from google drive using the following url:
 ```
-https://drive.google.com/drive/folders/1S6hSE8vDQ3R79VcnOrS7EwY_o09BMaUM?usp=sharing
+https://drive.google.com/drive/folders/1F2mOB-a8ChbGJ8KeOg7KLi7dnRwhx2Gp?usp=sharing
 ```
