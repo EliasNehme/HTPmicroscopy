@@ -21,6 +21,7 @@ https://drive.google.com/drive/folders/1tSzk91CfnRzaedVWYDP_33X9TeWfexG5?usp=sha
 [Thunderstorm](https://zitmen.github.io/thunderstorm/) was run on each zstack to quickly find the beads positions. These are saved in excel files `ThunStormMAX*.csv`. In addition Thunderstorm proximity filter was applied to avoid beads that are too close. Any group of proximal beads is registered in excel files `*close_locs.csv`, specifying beads that will be excluded from analysis. To reproduce the analysis from the paper, you need to run the scripts `Analyze_multiple_beads.m` and `Display_DOF_Multiple_beads.m`:
 * `Analyze_multiple_beads.m` - This code crops the useful beads, and performs 2D gaussian fit per frame around the focus of each bead (takes a long time to run). The generated results are `Crops_*.mat` (fast) and `fitted*.mat` (slow), where `*` is either `ST` or `EDOF`.
 * `Display_DOF_Multiple_beads.m` - This code displays the results from `fitted*.mat` and performs 1D gaussian fitting to the recovered PSF widths (also quite slow). The results are saved as `multi_bead_fits_results.mat`.
+
 Expected results of running these scripts are included inside `Beads/Low Density/`.
 
 # Spheroid measurement
