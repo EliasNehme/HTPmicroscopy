@@ -2,7 +2,7 @@
 
 This code accompanies the paper: "Depth-enhanced high throughput microscopy by compact PSF engineering"
 
-https://github.com/EliasNehme/HTPmicroscopy/assets/32178070/350ffb9b-d4ae-450b-88ca-a83467240ced
+https://github.com/EliasNehme/HTPmicroscopy/assets/32178070/a6422ffc-1f4f-41f1-8d2a-89b1da81cd53
 
 # Contents
 
