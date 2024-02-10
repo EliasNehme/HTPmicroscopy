@@ -1,5 +1,6 @@
 # EDOF imaging and deconvolution
 
+https://github.com/EliasNehme/HTPmicroscopy/assets/32178070/9b4106a8-d516-45ed-8afa-074db0bce2b7
 
 # Contents
 
@@ -25,8 +26,6 @@ https://drive.google.com/drive/folders/1tSzk91CfnRzaedVWYDP_33X9TeWfexG5?usp=sha
 Expected results of running these scripts are included inside `Beads/Low Density/`.
 
 # Spheroid measurement
-
-https://github.com/EliasNehme/HTPmicroscopy/assets/32178070/9b4106a8-d516-45ed-8afa-074db0bce2b7
 
 The raw data of a spheroid measured with both the standard PSF (unmodified objective lens) and the EDOF PSF can be downloaded from google drive using the following url:
 ```
