@@ -1,4 +1,4 @@
-# CellSnap
+# Compact PSF Engineering
 
 This code accompanies the paper: "Depth-enhanced high throughput microscopy by compact PSF engineering"
 
@@ -7,6 +7,8 @@ https://github.com/EliasNehme/HTPmicroscopy/assets/32178070/a6422ffc-1f4f-41f1-8
 # Contents
 
 - [Overview](#overview)
+- [EDOF imaging and deconvolution](#edof-imaging-and-deconvolution)
+- [Snapshot 3D imaging and CellSnap](#snapshot-3d-imaging-and-cellsnap)
 - [System requirements](#system-requirements-and-installation-instructions)
 - [Code structure](#code-structure)
 - [Experimental dataset](#experimental-dataset)
@@ -14,7 +16,14 @@ https://github.com/EliasNehme/HTPmicroscopy/assets/32178070/a6422ffc-1f4f-41f1-8
 
 # Overview
 
-The training of CellSnap is comprised of two phases: training a focus finder and afterward training a conditional 3D segmentation model. The dataset for training/testing has been curated from multiple scans of four 96 well plates. After discarding non-spherical and low snr spheroids, the resulting dataset consisted of 592 spheroid "views", out of which we use 532 for training and 60 for validation. `Conditional_3D_segmentation_testing.ipynb` demonstrates the application of a pre-trained CellSnap model on another 20 test spheroids not seen during training/validation. 
+Our proposed hardware prototype for compact PSF engineering is compatible with any phasemask/PSF. Specifically, in the paper we demonstrated two common applications: (i) Extended-Depth-Of-Field (EDOF) imaging using a [depth-insensitive PSF](https://ieeexplore.ieee.org/document/9439955), and (ii) Snapshot 3D imaging using the [Tetrapod](https://pubs.acs.org/doi/10.1021/acs.nanolett.5b01396) PSF. In [EDOF imaging](#edof-imaging-and-deconvolution), the resulting measurements can be used either directly or after a few iterations of Lucy-Richardson deconvolution. As for [snapshot 3d imaging](#snapshot-3d-imaging-and-cellsnap), the resulting 2D measurements need to be post-processed to extract the underlying 3D information. This is achieved with CellSnap; A tailored deep neural network architecture trained on an experimental dataset of matched 2D inputs and 3D outputs (see [below](#experimental-dataset)).   
+
+# EDOF imaging and deconvolution
+
+
+# Snapshot 3D imaging and CellSnap
+
+The training of CellSnap is comprised of two phases: training a focus finder and afterward training a conditional 3D segmentation model. The dataset for training/testing has been curated from multiple scans of four 96 well plates. After discarding non-spherical and low snr spheroids, the resulting dataset consisted of 592 spheroid "views", out of which we use 532 for training and 60 for validation. `Conditional_3D_segmentation_testing.ipynb` demonstrates the application of a pre-trained CellSnap model on another 20 test spheroids not seen during training/validation.
 
 # System requirements and installation instructions
 * The software was tested on a *Linux* system with Ubuntu version 18.0, equipped with an Nvidia Titan RTX GPU with 24 GB of memory.
