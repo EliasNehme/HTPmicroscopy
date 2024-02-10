@@ -15,7 +15,7 @@ Here we include MATLAB codes and data for the EDOF quantitative analysis perform
 
 # Beads in a gel
 
-The folder `Beads/Low Density/` should contain two data subfolders: `EDOF` and `ST` corresponding to z-stacks (saved as individual tif images) of the same FOV one acquired with the standard PSF (ST) and the other with an EDOF PSF. These zstacks can be downloaded from google drive using the following url:
+The folder `Beads/Low density/` should contain two data subfolders: `EDOF` and `ST` corresponding to z-stacks (saved as individual tif images) of the same FOV one acquired with the standard PSF (ST) and the other with an EDOF PSF. These zstacks can be downloaded from google drive using the following url:
 ```
 https://drive.google.com/drive/folders/1tSzk91CfnRzaedVWYDP_33X9TeWfexG5?usp=sharing
 ```
@@ -23,7 +23,7 @@ https://drive.google.com/drive/folders/1tSzk91CfnRzaedVWYDP_33X9TeWfexG5?usp=sha
 * `Analyze_multiple_beads.m` - This code crops the useful beads, and performs 2D gaussian fit per frame around the focus of each bead (takes a long time to run). The generated results are `Crops_*.mat` (fast) and `fitted*.mat` (slow), where `*` is either `ST` or `EDOF`.
 * `Display_DOF_Multiple_beads.m` - This code displays the results from `fitted*.mat` and performs 1D gaussian fitting to the recovered PSF widths (also quite slow). The results are saved as `multi_bead_fits_results.mat`.
 
-Expected results of running these scripts are included inside `Beads/Low Density/`.
+Expected results of running these scripts are included inside `Beads/Low density/`.
 
 # Spheroid measurement
 
