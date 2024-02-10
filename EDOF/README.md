@@ -11,7 +11,7 @@ https://github.com/EliasNehme/HTPmicroscopy/assets/32178070/9b4106a8-d516-45ed-8
 
 # Overview
 
-Here we include MATLAB codes and data for the EDOF quantitative analysis performed on [beads suspeneded in a gel](#beads-in-a-gel). In addition, we provide Drive links to raw measurements of a [spheroid](#spheroid-measurement) with the standard PSF (unmodified objective lens) and an EDOF PSF. Finally, we provide a [demo example](#deconvolution-example) of applying a few iterations of Lucy-Richardson Deconvolution to improve the resolution of the EDOF measurements.
+Here we include MATLAB codes and data for the EDOF quantitative analysis performed on [beads suspeneded in a gel](#beads-in-a-gel). In addition, we provide Drive links to raw measurements of a [spheroid](#spheroid-measurement) with the standard PSF (unmodified objective lens) and an EDOF PSF. Finally, we provide a [demo example](#deconvolution-example) of applying a few iterations of Lucy-Richardson deconvolution to improve the resolution of the EDOF measurements.
 
 # Beads in a gel
 
