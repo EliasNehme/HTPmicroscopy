@@ -16,10 +16,11 @@ https://github.com/EliasNehme/HTPmicroscopy/assets/32178070/a6422ffc-1f4f-41f1-8
 
 # Overview
 
-Our proposed hardware prototype for compact PSF engineering is compatible with any phasemask/PSF. Specifically, in the paper we demonstrated two common applications: (i) Extended-Depth-Of-Field (EDOF) imaging using a [depth-insensitive PSF](https://ieeexplore.ieee.org/document/9439955), and (ii) Snapshot 3D imaging using the [Tetrapod](https://pubs.acs.org/doi/10.1021/acs.nanolett.5b01396) PSF. In [EDOF imaging](#edof-imaging-and-deconvolution), the resulting measurements can be used either directly or after a few iterations of Lucy-Richardson deconvolution. As for [snapshot 3d imaging](#snapshot-3d-imaging-and-cellsnap), the resulting 2D measurements need to be post-processed to extract the underlying 3D information. This is achieved with CellSnap; A tailored deep neural network architecture trained on an experimental dataset of matched 2D inputs and 3D outputs (see [below](#experimental-dataset)).   
+Our proposed hardware prototype for compact PSF engineering is compatible with any phasemask/PSF. Specifically, in the paper we demonstrated two common applications: (i) Extended-Depth-Of-Field (EDOF) imaging using a [depth-insensitive PSF](https://ieeexplore.ieee.org/document/9439955), and (ii) Snapshot 3D imaging using the [Tetrapod](https://pubs.acs.org/doi/10.1021/acs.nanolett.5b01396) PSF. In [EDOF imaging](#edof-imaging-and-deconvolution), the resulting measurements can be used either directly or after a few iterations of Lucy-Richardson deconvolution. As for [snapshot 3d imaging](#snapshot-3d-imaging-and-cellsnap), the resulting 2D measurements need to be post-processed to extract the underlying 3D information. This is achieved with [CellSnap](#snapshot-3d-imaging-and-cellsnap); A tailored deep neural network architecture trained on an [experimental dataset](#experimental-dataset) of matched 2D inputs and 3D outputs.   
 
 # EDOF imaging and deconvolution
 
+The folder `EDOF` includes MATLAB codes and links to experimental measurements with two different realizations of EDOF PSFs.
 
 # Snapshot 3D imaging and CellSnap
 
@@ -37,7 +38,7 @@ The training of CellSnap is comprised of two phases: training a focus finder and
     * `Conditional_3D_segmentor_training.ipynb` implements the training of the conditional 3D segmentation model given the pre-trained focus finder and matched pairs of Tetrapod z-stacks and the corresponding 3D segmentation outputs obtained by post-processing the results of [Cellpose](https://www.nature.com/articles/s41592-020-01018-x) applied to the accompanying standard PSF z-stacks.
 * Testing
     * `Focus_finder_testing.ipynb` implements the testing of the focus finder.
-    * `Conditional_3D_segmentor_testing.ipynb` implements the testing of cellsnap after training both components.
+    * `Conditional_3D_segmentor_testing.ipynb` implements the testing of CellSnap after training both components.
  
  # Experimental dataset
 
@@ -49,7 +50,7 @@ Note that the `Exp Dataset` folder should be in the same working directory of th
 
  # Demo example
 
-`Conditional_3D_segmentor_testing.ipynb` demonstrates the applicability of cellsnap on 20 test spheroids with demo pre-trained weights hardcoded in the notebook. Running the notebook on a linux system with Titan RTX GPU takes ~2 mins. The expected results are embedded in the saved notebook.
+`Conditional_3D_segmentor_testing.ipynb` demonstrates the applicability of CellSnap on 20 test spheroids with demo pre-trained weights hardcoded in the notebook. Running the notebook on a linux system with Titan RTX GPU takes ~2 mins. The expected results are embedded in the saved notebook.
 
 * The `Models` folder includes the following:
     * `focus_finder_model_best_ckpt.pth` - pre-trained model weights of the focus finder.
