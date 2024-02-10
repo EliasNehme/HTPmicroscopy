@@ -20,11 +20,15 @@ Our proposed hardware prototype for compact PSF engineering is compatible with a
 
 # EDOF imaging and deconvolution
 
-The folder `EDOF` includes MATLAB codes and links to experimental measurements with two different realizations of EDOF PSFs.
+The folder `EDOF` includes MATLAB codes and links to experimental measurements with two different realizations of EDOF PSFs. The first set of measurements is of bead sample embedded in a 3D gel. This sample was use to quantitatively assess the gain in performance brought by the EDOF PSF comapred to a standard unmodified obejctive lens. The second set of measurements include the appilcation of an EDOF PSF to spheroid imaging, with the possibility of further improving the result via Lucy-Richardson deconvolution
+
+https://github.com/EliasNehme/HTPmicroscopy/assets/32178070/9b4106a8-d516-45ed-8afa-074db0bce2b7
 
 # Snapshot 3D imaging and CellSnap
 
 The training of CellSnap is comprised of two phases: training a focus finder and afterward training a conditional 3D segmentation model. The dataset for training/testing has been curated from multiple scans of four 96 well plates. After discarding non-spherical and low snr spheroids, the resulting dataset consisted of 592 spheroid "views", out of which we use 532 for training and 60 for validation. `Conditional_3D_segmentation_testing.ipynb` demonstrates the application of a pre-trained CellSnap model on another 20 test spheroids not seen during training/validation.
+
+
 
 # System requirements and installation instructions
 * The software was tested on a *Linux* system with Ubuntu version 18.0, equipped with an Nvidia Titan RTX GPU with 24 GB of memory.
