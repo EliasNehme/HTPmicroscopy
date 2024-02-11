@@ -1,5 +1,5 @@
 ## Folder containing pre-processed cellular spheroids: 
-Here there should be 2 folders: Training and Testing, each of which contains 3 subfodlers inside TP, ST, and CM. The resulting directory layout is expected to look like:
+Here there should be 2 folders: `Training` and `Testing`, each of which contains 3 subfodlers inside `TP`, `ST`, and `CM`. The resulting directory layout is expected to look like:
 ```
 Exp Dataset
     |____Training
