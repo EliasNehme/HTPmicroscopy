@@ -13,7 +13,7 @@ https://github.com/EliasNehme/HTPmicroscopy/assets/32178070/a6422ffc-1f4f-41f1-8
 - [Code structure](#code-structure)
 - [Experimental dataset](#experimental-dataset)
 - [Demo example](#demo-example)
-- [Nanoparticles tracking analysis](#nanoparticle-tracking-analysis)
+- [Nanoparticle tracking analysis](#nanoparticle-tracking-analysis)
 
 # Overview
 
@@ -64,6 +64,9 @@ Note that the `Exp Dataset` folder should be in the same working directory of th
 https://github.com/EliasNehme/HTPmicroscopy/assets/32178070/cbfbdc75-b444-491b-adc4-abcf90a61798
 
 # Nanoparticle tracking analysis
+
+In the paper, we also tested the Tetrapod PSF for the application of three-dimensional nanoparticle tracking analysis (NTA). To achieve this, we measured a sample fo diffusing beads with the Tetrapod PSF and applied [DeepSTORM3D](https://github.com/EliasNehme/DeepSTORM3D) to the resulting time lapse of 2D images to recover the 3D localizations over time. These were then linked into 3D tracks using a custom MATLAB code. The folder `NTA` includes the relevant MATLAB codes and links to a measured experimental time lapse with the Tetrapod PSF.
+
 
 
 
