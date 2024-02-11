@@ -13,6 +13,7 @@ https://github.com/EliasNehme/HTPmicroscopy/assets/32178070/a6422ffc-1f4f-41f1-8
 - [Code structure](#code-structure)
 - [Experimental dataset](#experimental-dataset)
 - [Demo example](#demo-example)
+- [Nanoparticles tracking analysis](#nanoparticle-tracking-analysis)
 
 # Overview
 
@@ -31,7 +32,7 @@ The training of CellSnap is comprised of two phases: training a focus finder and
 https://github.com/EliasNehme/HTPmicroscopy/assets/32178070/91268082-5d8c-40db-b526-355306f0c5e2
 
 # System requirements and installation instructions
-* The software was tested on a *Linux* system with Ubuntu version 18.0, equipped with an Nvidia Titan RTX GPU with 24 GB of memory.
+* CellSnap was tested on a *Linux* system with Ubuntu version 18.0, equipped with an Nvidia Titan RTX GPU with 24 GB of memory.
 * The [conda](https://docs.conda.io/en/latest/) environment for this project is given in `environment.yml`. To replicate the environment on a Linux system, use the command: `conda env create -f environment.yml` from within this directory. This should take a couple of minutes.
 * After activating the environment using `conda activate cellsnap`, you're set to go.
 
@@ -61,6 +62,10 @@ Note that the `Exp Dataset` folder should be in the same working directory of th
     * `conditional_3D_segmentor_model_best_ckpt.pth` - pre-trained model weights of the conditional 3D segmentation model.
 
 https://github.com/EliasNehme/HTPmicroscopy/assets/32178070/cbfbdc75-b444-491b-adc4-abcf90a61798
+
+# Nanoparticle tracking analysis
+
+
 
 
 
