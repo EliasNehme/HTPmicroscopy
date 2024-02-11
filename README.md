@@ -59,3 +59,8 @@ Note that the `Exp Dataset` folder should be in the same working directory of th
 * The `Models` folder includes the following:
     * `focus_finder_model_best_ckpt.pth` - pre-trained model weights of the focus finder.
     * `conditional_3D_segmentor_model_best_ckpt.pth` - pre-trained model weights of the conditional 3D segmentation model.
+
+https://github.com/EliasNehme/HTPmicroscopy/assets/32178070/cbfbdc75-b444-491b-adc4-abcf90a61798
+
+
+
