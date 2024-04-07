@@ -14,9 +14,9 @@ Here we include MATLAB codes and data for the three-dimensional NTA performed on
 
 # Time lapse data
 
-The folder `NTA` should contain two data subfolders: `Incucyte_TP_low_density` and `Incucyte_TP_high_density`, corresponding to a time lapse of 2D images (saved as individual tif images) of a sparse/dense FOV acquired with the Tetrapod PSF over time. The time span of the experiment was 100 frames with an exposure time of 0.4 seconds, and a delay of 2 seconds in between consecutive frames. These images can be downloaded from google drive using the following url:
+The folder `NTA` should contain two data subfolders: `Incucyte_TP_low_density` and `Incucyte_TP_high_density`, corresponding to a time lapse of 2D images (saved as individual tif images) of a sparse/dense FOV acquired with the Tetrapod PSF over time. The time span of the experiment was 100 frames with an exposure time of 0.4 seconds, and a delay of 2 seconds in between consecutive frames. These images are inside the compressed folder `Tetrapod_Nanoparticle_tracking_analysis.zip` which can be downloaded from Zenodo:
 ```
-https://drive.google.com/drive/folders/1uybrj42V_9C1rwZZ8TFTtqeFbRh2ujKO?usp=sharing
+https://zenodo.org/records/10928122/files/Tetrapod_Nanoparticle_tracking_analysis.zip?download=1
 ```
 
 # Diffusing beads example

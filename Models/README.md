@@ -6,7 +6,7 @@ Models
     |___Cellsnap_3D_segmentor_TP_model_best_ckpt.pth
     |___README.md
 ```
-These weights can be downloaded from google drive using the following url:
+These weights are inside the compressed folder `Tetrapod_Pretrained_models_for_CellSnap.zip` which can be downloaded from Zenodo:
 ```
-https://drive.google.com/drive/folders/1F2mOB-a8ChbGJ8KeOg7KLi7dnRwhx2Gp?usp=sharing
+https://zenodo.org/records/10928122/files/Tetrapod_Pretrained_models_for_CellSnap.zip?download=1
 ```

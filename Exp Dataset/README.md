@@ -12,7 +12,7 @@ Exp Dataset
     |       |____ CM
     |____README.md
 ```
-This dataset can be downloaded from google drive using the following url:
+This dataset is inside the compressed folder `Tetrapod_Spheroid_dataset_for_CellSnap.zip` which can be downloaded from Zenodo:
 ```
-https://drive.google.com/drive/folders/1S6hSE8vDQ3R79VcnOrS7EwY_o09BMaUM?usp=sharing
+https://zenodo.org/records/10928122/files/Tetrapod_Spheroid_dataset_for_CellSnap.zip?download=1
 ```
